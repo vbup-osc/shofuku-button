@@ -9,7 +9,7 @@
             <button class="btn btn-control" style="right:60px;bottom:15px;" @click="random"><img src="/resources/choose.svg" style="width: 30px;"></button>
             <button class="btn btn-control" style="right:105px;bottom:15px;padding:5.5px;" :class="{ 'disabled': autoCheck }" @click="overlap" :title="$t('info.overlapTips')"><input class="checkbox" type="checkbox" v-model="overlapCheck"><img src="/resources/over.svg" style="width: 25px;"></button>
             <button class="btn btn-control" style="right:163px;bottom:15px;" :class="{ 'disabled': overlapCheck }" @click="autoPlay"><input class="checkbox" type="checkbox" v-model="autoCheck"><img src="/resources/auto.svg" style="width: 30px;"></button>
-            <div class="title">{{$t("info.title")}}<img src="/resources/bg.gif" style="width:63px;height:auto;margin-bottom: 3px;"></div>
+            <div class="title">{{$t("info.title")}}</div>
                 <div class="cate-ctrldft">{{$t("action.live")}}
                     <div v-for="(item) in youtubeData.channels" :key="item.id"><button class="btn btn-ctrldft" v-if="item.id === 'UCp-5t9SrOQwXMU7iIjQfARg'">{{$t('info.subscriber')}}{{item.subscriberCount}}</button></div>
                     <div v-for="live in live_data" :key="live.startTime">
@@ -53,9 +53,9 @@
     margin-top: 65px;
     border-radius: 30px;
     text-align: left;
-    color: #fff;    
-    text-shadow:rgba(0, 0, 0, 0.308) 5px 6px 10px;
-    font-family:'jphuaifangti2156d662b421f12';
+    color: #8b75c2;    
+    text-shadow:rgba(0, 0, 0, 0.2) 0px 0px 10px;
+    font-family:'jphuaifangti2172224e9221f12';
     font-size: 35px;
     padding-top: 10px;
     padding-bottom: 30px;
@@ -104,7 +104,7 @@
     box-shadow: 0 0 5px 5px rgba(255, 255, 255, 0.397);
 }
 .cate-header{/*分类标题*/
-    background-image: linear-gradient(to bottom right,rgb(78, 78, 78),rgb(58, 58, 58)) ;
+    background-image: linear-gradient(to bottom right,rgb(186, 166, 211),rgb(170, 104, 214)) ;
     box-shadow: 0 10px 10px 0px rgba(0, 0, 0, 0.151);
     border-radius: 30px;
     text-align: left;
@@ -133,7 +133,7 @@
     font-weight: 600;
 }
 .cate-ctrldft{/*控制中心分类标题*/
-    background-image: linear-gradient(to bottom right,rgb(255, 153, 153),rgb(255, 125, 125));
+    background-image: linear-gradient(to bottom right,rgb(255, 237, 133),rgb(255, 182, 73));
     border-radius: 30px;
     text-align: left;
     text-shadow: rgba(184, 88, 88, 0.281) 5px 6px 10px;

@@ -1,6 +1,6 @@
 const ja_JP = {
     info: {
-        title: "ミオボタン",
+        title: "招福ボタン",
         info: "通知",
         null: "空",
         subscriber: "現在までのチャンネル登録者人数:",

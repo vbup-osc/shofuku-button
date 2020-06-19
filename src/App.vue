@@ -60,7 +60,7 @@
 @import "../node_modules/bootstrap/dist/css/bootstrap.css";
 .main-content{ /*内容部分*/
     min-height: 100vh;
-    background-color: #333333;
+    background-color: #f5f1ff;
 }
 .btn-buttom{
     border: 0px;
@@ -169,12 +169,12 @@
     width: 100%;
     height: 100%;
     min-height: 60px;
-    background-color: #222222;
+    background-color: #c8c4d0;
 }
 .footer-content {
     padding-top: 10px;
     padding-bottom: 10px;
-    color: #c2c2c2;
+    color: #474747;
     font-weight:600;
 }
 .text-right{
