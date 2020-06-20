@@ -20,7 +20,7 @@ jobs:
     - name: Generate Static Site
       run: npm run build
         
-    - name: Deploy to Coding.net branch
+    - name: Deploy
       working-directory: dist
       run: |
         git config --global user.email "samuimomijiyuki@qq.com"
