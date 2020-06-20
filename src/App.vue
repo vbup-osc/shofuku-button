@@ -44,9 +44,9 @@
         </div>
         <footer class="footer">
             <div class="container-fluid footer-content">
-                <button class="btn-buttom btn-buttom-info"><a href="javascript:location.reload();" style="color: #eeeeee;text-decoration: none">Colorful Wolf 1.2.7</a></button>
+                <button class="btn-buttom btn-buttom-info"><a href="javascript:location.reload();" style="color: #eeeeee;text-decoration: none">Wine Glass 1.0.0 BETA</a></button>
                 <div class="pull-left">
-                    <div class="text-left" style="color: rgba(255, 166, 102);">{{$t("info.author")}}</div>
+                    <div class="text-left" style="color: #5231a7;">{{$t("info.author")}}</div>
                     <div class="text-left">{{$t("info.notOfficial")}}</div>
                     <div class="text-left"><a href="https://miobutton.github.io/MioButton/" target="_blank">{{$t("info.audioStaff")}}</a></div>
                     <div class="text-left"><a href="https://github.com/MioButton/MioButton" target="_blank">{{$t("info.toGithub")}}</a></div>
@@ -60,7 +60,7 @@
 @import "../node_modules/bootstrap/dist/css/bootstrap.css";
 .main-content{ /*内容部分*/
     min-height: 100vh;
-    background-color: #f5f1ff;
+    background-color: #ecdac6;
 }
 .btn-buttom{
     border: 0px;
@@ -69,24 +69,24 @@
 .btn-buttom-info {
     color: #fff;
     font-size: 12px;
-    background-color: rgb(0, 214, 0);
+    background-color: rgb(255, 196, 33);
     border-radius: 5px;
 }
 .btn-buttom-info:hover {
     color: #fff;
     font-size: 12px;
-    background-color: rgb(4, 163, 4);
+    background-color: rgb(207, 142, 0);
     border-radius: 5px;
 }
 .btn-buttom-info:focus {
     color: #fff;
     font-size: 12px;
-    background-color: rgb(4, 163, 4);
+    background-color: rgb(207, 142, 0);
     border-radius: 5px;
 }
 .navbar{ 
     box-shadow: 0 5px 10px 0px rgba(0, 0, 0, 0.151);
-    background-color: rgba(34, 34, 34, 0.5);/*顶栏部分*/
+    background-color: rgba(34, 34, 34, 0.205);/*顶栏部分*/
     margin: 15px;
 }
 .navbar-fixed-top{ 
@@ -106,7 +106,7 @@
     border-top: 0px solid transparent;/*右侧二级菜单顶部边框*/
 }
 .navbar-default .navbar-toggle .icon-bar{ 
-    background: #999999;/*右侧按钮颜色*/
+    background: #e7dacb;/*右侧按钮颜色*/
 }
 .dropdown-menu{
     width: 63px;
@@ -169,7 +169,7 @@
     width: 100%;
     height: 100%;
     min-height: 60px;
-    background-color: #c8c4d0;
+    background-color: #cfb28f;
 }
 .footer-content {
     padding-top: 10px;

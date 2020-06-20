@@ -9,9 +9,9 @@
             <button class="btn btn-control" style="right:60px;bottom:15px;" @click="random"><img src="/resources/choose.svg" style="width: 30px;"></button>
             <button class="btn btn-control" style="right:105px;bottom:15px;padding:5.5px;" :class="{ 'disabled': autoCheck }" @click="overlap" :title="$t('info.overlapTips')"><input class="checkbox" type="checkbox" v-model="overlapCheck"><img src="/resources/over.svg" style="width: 25px;"></button>
             <button class="btn btn-control" style="right:163px;bottom:15px;" :class="{ 'disabled': overlapCheck }" @click="autoPlay"><input class="checkbox" type="checkbox" v-model="autoCheck"><img src="/resources/auto.svg" style="width: 30px;"></button>
-            <div class="title">{{$t("info.title")}}</div>
-                <div class="cate-ctrldft">{{$t("action.live")}}
-                    <div v-for="(item) in youtubeData.channels" :key="item.id"><button class="btn btn-ctrldft" v-if="item.id === 'UCp-5t9SrOQwXMU7iIjQfARg'">{{$t('info.subscriber')}}{{item.subscriberCount}}</button></div>
+            <div class="title">{{$t("info.title")}}<img src="/resources/logo.png" style="width:40px;height:auto;padding-bottom: 9px;margin-left:7px;"></div>
+                <!--<div class="cate-ctrldft">{{$t("action.live")}}
+                    <div v-for="(item) in youtubeData.channels" :key="item.id"><button class="btn btn-ctrldft" v-if="item.id === 'UCM1x5jQwA8v8yzSq_svSHQQ'">{{$t('info.subscriber')}}{{item.subscriberCount}}</button></div>
                     <div v-for="live in live_data" :key="live.startTime">
                         <div v-if="live.title.length">
                             <span v-if="live.type === 'upcoming'" style="font-size:17px;">{{$t("action.plan")}}{{ format_time(live.startTime) }}</span>
@@ -26,15 +26,13 @@
                             </a></button>
                         </div>
                     </div>
-                </div>
+                </div>-->
                 <div class="cate-ctrldft">{{$t("action.random")}}
                         <input id="share" class="btn btn-ctrldft" style="width: 190px;-webkit-user-select:text !important;" type="text" name="u" value :placeholder="$t('action.placeholder')">
                         <button class="btn btn-ctrldft" @click="randomshare">{{$t("action.share")}}</button>
                 </div>
                 <div class="cate-ctrldft">{{$t("action.adtitle")}}
-                    <button class="btn btn-ctrldft" onclick="window.open('https://www.bilibili.com/read/readlist/rl210208')">{{$t("action.weekly")}}</button>
                     <button class="btn btn-ctrldft" onclick="window.open('https://vtbbtn.org')">{{$t("action.vtbbtn")}}</button>
-                    <button class="btn btn-ctrldft" onclick="window.open('https://sticker.ookamimio.org')">{{$t("action.sticker")}}</button>
                 </div>
             <div v-for="category in voices" v-bind:key="category.categoryName">
                 <div class="cate-header">{{ $t("voicecategory." + category.categoryName) }} 
@@ -53,7 +51,7 @@
     margin-top: 65px;
     border-radius: 30px;
     text-align: left;
-    color: #8b75c2;    
+    color: #5231a7;    
     text-shadow:rgba(0, 0, 0, 0.2) 0px 0px 10px;
     font-family:'jphuaifangti2172224e9221f12';
     font-size: 35px;
@@ -82,7 +80,7 @@
     background-color:#ff7b7be5
 }
 .btn-ctrldft{/*今日随机按钮*/
-    background-image: linear-gradient(to bottom right,rgb(255, 184, 184),rgb(255, 156, 156)) ;
+    background-image: linear-gradient(to bottom right,rgb(255, 223, 119),rgb(255, 203, 32)) ;
     border: 0px; /*边框去除*/
     border-radius: 17px;/*边框圆角*/
     padding-top: 3px;
@@ -104,7 +102,7 @@
     box-shadow: 0 0 5px 5px rgba(255, 255, 255, 0.397);
 }
 .cate-header{/*分类标题*/
-    background-image: linear-gradient(to bottom right,rgb(186, 166, 211),rgb(170, 104, 214)) ;
+    background-image: linear-gradient(to bottom right,rgb(186, 166, 211),rgb(169, 110, 209)) ;
     box-shadow: 0 10px 10px 0px rgba(0, 0, 0, 0.151);
     border-radius: 30px;
     text-align: left;
@@ -133,7 +131,7 @@
     font-weight: 600;
 }
 .cate-ctrldft{/*控制中心分类标题*/
-    background-image: linear-gradient(to bottom right,rgb(255, 237, 133),rgb(255, 182, 73));
+    background-image: linear-gradient(to bottom right,#ffbf6c,#ff9b20);
     border-radius: 30px;
     text-align: left;
     text-shadow: rgba(184, 88, 88, 0.281) 5px 6px 10px;
@@ -163,7 +161,7 @@
 .btn-new {
     color: #fff;
     max-height: max-content;
-    background-image: linear-gradient(to bottom right,rgba(255, 120, 120, 0.836),rgba(255, 71, 71, 0.836));
+    background-image: linear-gradient(to bottom right,#ffbb62,#ff8c00);
     box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
     border-radius: 15px;
     border: 0px;
@@ -192,7 +190,7 @@
 import Vue from 'vue'
 import Component from 'vue-class-component'
 import VoiceList from '../voices.json'
-import axios from 'axios'
+/*import axios from 'axios'*/
 
 @Component
 class HomePage extends Vue {
@@ -204,7 +202,7 @@ class HomePage extends Vue {
     live_data = {};
     live_data_loading = true;
     youtubeData = {channels: null};
-    created() { 
+    /*created() { 
         this.youtube()
     }
     youtube() {
@@ -214,18 +212,20 @@ class HomePage extends Vue {
         })
     }
     mounted() {
-        axios.get('https://api.jetri.co/live')
+        axios.get('https://api.jetri.co/live/1.1')
         .then(response => { 
             let fetched = response.data;
             let mio_lives = [];
             const channel_id = 'UCp-5t9SrOQwXMU7iIjQfARg';
             fetched.live.forEach(function(item){
                 if (item.channel === channel_id){
+                    item.type = 'live';
                     mio_lives.push(item);
                 }
             });
             fetched.upcoming.forEach(function(item){
                 if (item.channel === channel_id){
+                    item.type = 'upcoming';
                     mio_lives.push(item);
                 }
             });
@@ -238,7 +238,7 @@ class HomePage extends Vue {
         var t,y,m,d,h,i,s;
         t = ts ? new Date(ts*1000) : new Date();y = t.getFullYear();m = t.getMonth()+1;d = t.getDate();h = t.getHours();i = t.getMinutes();s = t.getSeconds();
         return y+'-'+(m<10?'0'+m:m)+'-'+(d<10?'0'+d:d)+' '+(h<10?'0'+h:h)+':'+(i<10?'0'+i:i)+':'+(s<10?'0'+s:s);
-    }
+    }*/
     play(item){
         if (this.overlapCheck) {
             let audio = new Audio("voices/" + item.path);
