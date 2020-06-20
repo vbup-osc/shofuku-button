@@ -86,7 +86,7 @@
 }
 .navbar{ 
     box-shadow: 0 5px 10px 0px rgba(0, 0, 0, 0.151);
-    background-color: rgba(139, 112, 72, 0.521);/*顶栏部分*/
+    background-color: rgba(0, 0, 0, 0.363);/*顶栏部分*/
     margin: 15px;
 }
 .navbar-fixed-top{ 
