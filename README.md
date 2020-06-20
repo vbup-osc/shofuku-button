@@ -1,6 +1,6 @@
 # 福按钮/招福ボタン/Shofuku Button
 
-Shofuku Button [http://shofukunyako.org](https://shofukunyako.org)
+Shofuku Button [http://nyakoshofuku.org](https://nyakoshofuku.org)
 
 ![SHOFUKU-BTN-CI/CD](https://github.com/MioButton/ShofukuButton/workflows/SHOFUKU-BTN-CI/CD/badge.svg)
 
