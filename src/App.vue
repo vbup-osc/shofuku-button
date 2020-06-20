@@ -60,7 +60,7 @@
 @import "../node_modules/bootstrap/dist/css/bootstrap.css";
 .main-content{ /*内容部分*/
     min-height: 100vh;
-    background-color: #e9e5ff;
+    background-color: #f4f2ff;
 }
 .btn-buttom{
     border: 0px;
