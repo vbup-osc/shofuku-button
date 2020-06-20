@@ -64,7 +64,7 @@
 }
 .btn-control{
     position: fixed;
-    background-color: #ff7b7bc2;/*背景颜色*/
+    background-color: #7f5bffc2;/*背景颜色*/
     border: 0px; /*边框去除*/
     border-radius: 17px;/*边框圆角*/
     max-width: 100%;
@@ -77,7 +77,7 @@
     text-align: center;
 }
 .btn-control:hover,.btn-control:focus{
-    background-color:#ff7b7be5
+    background-color:#7f5bff
 }
 .btn-ctrldft{/*今日随机按钮*/
     background-image: linear-gradient(to bottom right,rgb(255, 223, 119),rgb(255, 203, 32)) ;
@@ -95,8 +95,8 @@
     white-space: normal !important;
 }
 .btn-ctrldft:active,.btn-ctrldft:focus{/*宣传中心按钮选定*/
-    background-image: linear-gradient(to top left,rgb(255, 184, 184),rgb(255, 156, 156)) ;
-    color: rgb(255, 228, 228);
+    background-image: linear-gradient(to top left,rgb(255, 223, 119),rgb(255, 203, 32)) ;
+    color: rgb(255, 252, 228);
 }
 .btn-ctrldft:hover{
     box-shadow: 0 0 5px 5px rgba(255, 255, 255, 0.397);
@@ -116,7 +116,7 @@
     margin-bottom: 12px;
 }
 .btn-body-status{/*播放状态分类标题*/
-    background-color: #ff7d7d;
+    background-color: #aa7dff;
     color: #fff;
     text-align: center;
     position: fixed;
@@ -172,11 +172,11 @@
     white-space: normal !important;
 }
 .btn-new:active,.btn-new:focus{
-    color: rgb(255, 204, 204);
-    background-image: linear-gradient(to top left,rgba(255, 120, 120, 0.836),rgba(255, 71, 71, 0.836));
+    color: rgb(229, 229, 151);
+    background-image: linear-gradient(to top left,#ffbb62,#ff8c00);
 }
 .btn-new:hover{
-    box-shadow: 0px 0px 5px 5px rgba(252, 120, 120, 0.322);
+    box-shadow: 0px 0px 5px 5px rgba(252, 221, 120, 0.322);
 }
 .checkbox {
     display: inline-block;
