@@ -64,7 +64,7 @@
 }
 .btn-control{
     position: fixed;
-    background-color: #7f5bffc2;/*背景颜色*/
+    background-color: rgba(186, 166, 211, 0.829);/*背景颜色*/
     border: 0px; /*边框去除*/
     border-radius: 17px;/*边框圆角*/
     max-width: 100%;
@@ -77,7 +77,7 @@
     text-align: center;
 }
 .btn-control:hover,.btn-control:focus{
-    background-color:#7f5bff
+    background-color:rgb(186, 166, 211)
 }
 .btn-ctrldft{/*今日随机按钮*/
     background-image: linear-gradient(to bottom right,rgb(255, 223, 119),rgb(255, 203, 32)) ;
