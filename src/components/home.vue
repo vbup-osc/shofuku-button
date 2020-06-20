@@ -53,7 +53,7 @@
     text-align: left;
     color: #5231a7;    
     text-shadow:rgba(0, 0, 0, 0.2) 0px 0px 10px;
-    font-family:'jphuaifangti2172224e9221f12';
+    font-weight: bold;
     font-size: 35px;
     padding-top: 10px;
     padding-bottom: 30px;
