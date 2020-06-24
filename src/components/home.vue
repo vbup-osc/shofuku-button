@@ -5,10 +5,13 @@
                 <div>{{ voice.name ? $t("action.playing") + $t("voice." + voice.name ) : $t("action.noplay") }}</div>
                 <audio id="player" @ended="voiceEnd(false)"></audio>
             </div>
-            <button class="btn btn-control" style="right:15px;bottom:15px;" @click="stopPlay"><img src="/resources/stop.svg" style="width: 30px;"></button>
-            <button class="btn btn-control" style="right:60px;bottom:15px;" @click="random"><img src="/resources/choose.svg" style="width: 30px;"></button>
-            <button class="btn btn-control" style="right:105px;bottom:15px;padding:5.5px;" :class="{ 'disabled': autoCheck }" @click="overlap" :title="$t('info.overlapTips')"><input class="checkbox" type="checkbox" v-model="overlapCheck"><img src="/resources/over.svg" style="width: 25px;"></button>
-            <button class="btn btn-control" style="right:163px;bottom:15px;" :class="{ 'disabled': overlapCheck }" @click="autoPlay"><input class="checkbox" type="checkbox" v-model="autoCheck"><img src="/resources/auto.svg" style="width: 30px;"></button>
+            <button @click="control" class="btn btn-control-main" style="right:15px;bottom:15px;"><img id="img" src="/resources/menu.svg" style="margin: 0px 9px;width:30px"></button>
+            <div id="btn" style="display:none;">
+                <button id="small" class="btn btn-control" style="right:78px;bottom:15px;" @click="stopPlay"><img src="/resources/stop.svg" style="width: 30px;"></button>
+                <button id="small" class="btn btn-control" style="right:123px;bottom:15px;" @click="random"><img src="/resources/choose.svg" style="width: 30px;"></button>
+                <button id="small" class="btn btn-control" style="right:168px;bottom:15px;padding:5.5px;" :class="{ 'disabled': autoCheck }" @click="overlap" :title="$t('info.overlapTips')"><input class="checkbox" type="checkbox" v-model="overlapCheck"><img src="/resources/over.svg" style="width: 25px;"></button>
+                <button id="small" class="btn btn-control" style="right:226px;bottom:15px;" :class="{ 'disabled': overlapCheck }" @click="autoPlay"><input class="checkbox" type="checkbox" v-model="autoCheck"><img src="/resources/auto.svg" style="width: 30px;"></button>
+            </div>
             <div class="title">{{$t("info.title")}}<img src="/resources/logo.png" style="width:40px;height:auto;padding-bottom: 9px;margin-left:7px;"></div>
                 <!--<div class="cate-ctrldft">{{$t("action.live")}}
                     <div v-for="(item) in youtubeData.channels" :key="item.id"><button class="btn btn-ctrldft" v-if="item.id === 'UCM1x5jQwA8v8yzSq_svSHQQ'">{{$t('info.subscriber')}}{{item.subscriberCount}}</button></div>
@@ -48,7 +51,7 @@
 <style lang="scss" scoped>
 .title{
     text-align: left;
-    margin-top: 65px;
+    margin-top: 75px;
     border-radius: 30px;
     text-align: left;
     color: #5231a7;    
@@ -62,19 +65,45 @@
 .btn:hover, .btn:active, .btn.focus{
     color: #ffffff;
 }
-.btn-control{
+.btn-control-main{
     position: fixed;
+    z-index: 2;
     background-color: rgba(186, 166, 211, 0.829);/*背景颜色*/
     border: 0px; /*边框去除*/
     border-radius: 17px;/*边框圆角*/
     max-width: 100%;
     padding: 3px;
+    transition-property: all;
+    transition-duration: 400ms;
     font-weight: 600;
     margin-top: 0px;
     margin-bottom: 0px;
     font-weight: 700;
     font-size: 15px;
     text-align: center;
+}
+.btn-control-main:hover,.btn-control:focus{
+    background-color:rgba(186, 166, 211, 0.87);    
+
+}
+.btn-control{
+    z-index: 1;
+    position: fixed;
+    background-color: rgba(186, 166, 211, 0.829);/*背景颜色*/
+    border: 0px; /*边框去除*/
+    border-radius: 17px;/*边框圆角*/
+    max-width: 100%;
+    padding: 3px;
+    animation: mymove 800ms;
+    font-weight: 600;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    font-weight: 700;
+    font-size: 15px;
+    text-align: center;
+}
+@keyframes mymove{
+    0%{right:15px;}
 }
 .btn-control:hover,.btn-control:focus{
     background-color:rgb(186, 166, 211)
@@ -90,6 +119,8 @@
     padding-bottom: 3px;
     margin-left: 5px;
     margin-right: 5px;
+    transition-property: all;
+    transition-duration: 300ms;
     word-warp: break-word !important;
     word-break: break-all !important;
     white-space: normal !important;
@@ -107,6 +138,8 @@
     border-radius: 30px;
     text-align: left;
     text-shadow:rgba(0, 0, 0, 0.2) 5px 6px 10px;
+    transition-property: all;
+    transition-duration: 300ms;
     font-weight: 600;
     color: #fff;
     padding-top: 18px;
@@ -115,28 +148,32 @@
     margin-top: 12px;
     margin-bottom: 12px;
 }
+.cate-header:hover{
+    box-shadow: 0 10px 10px 0px rgba(0, 0, 0, 0.3);
+}
 .btn-body-status{/*播放状态分类标题*/
     background-color: #aa7dff;
+    border-radius: 150px;
     color: #fff;
     text-align: center;
+    box-shadow: 0 10px 10px 0px rgba(0, 0, 0, 0.2);
     position: fixed;
-    top: 0px;
-    left: 0px;
-    right: 0px;
+    top: 10px;
     font-size: 14px;
-    padding-top: 0px;
-    padding-bottom: 0px;
-    padding-left: 30px;
-    padding-right: 30px;
+    padding: 0px 20px;
+    margin-left: -15px;
+    margin-right: 15px;
     font-weight: 600;
 }
 .cate-ctrldft{/*控制中心分类标题*/
-    background-image: linear-gradient(to bottom right,#ffbf6c,#ff9b20);
+    background-image: linear-gradient(to bottom right,#ffc77d,#ffac47);
     border-radius: 30px;
     text-align: left;
     text-shadow: rgba(184, 88, 88, 0.281) 5px 6px 10px;
     box-shadow: 0 10px 10px 0px rgba(0, 0, 0, 0.151);
     color: #fff;
+    transition-property: all;
+    transition-duration: 300ms;
     font-size: 20px;
     padding-top: 14px;
     padding-left: 17px;
@@ -145,6 +182,9 @@
     padding-bottom: 14px;
     margin-bottom: 12px;
     max-width: max-content;
+}
+.cate-ctrldft:hover{
+    box-shadow: 0 10px 10px 0px rgba(0, 0, 0, 0.3);
 }
 .cate-body{
     margin-top: 12px;
@@ -166,6 +206,8 @@
     border: 0px;
     max-width: 100%;
     font-weight: 600;
+    transition-property: all;
+    transition-duration: 300ms;
     word-warp: break-word !important;
     word-break: break-all !important;
     white-space: normal !important;
@@ -201,6 +243,17 @@ class HomePage extends Vue {
     live_data = {};
     live_data_loading = true;
     youtubeData = {channels: null};
+    control(){
+        var btn = document.getElementById('btn');
+        var img = document.getElementById('img')
+            if(btn.style.display == "none"){
+                btn.style.display = "";
+                img.src = "/resources/close.svg";
+            }else{
+                btn.style.display = "none";
+                img.src = "/resources/menu.svg";
+            }
+    }
     /*created() { 
         this.youtube()
     }
