@@ -48,8 +48,8 @@
                 <div class="pull-left">
                     <div class="text-left" style="color: #5231a7;">{{$t("info.author")}}</div>
                     <div class="text-left">{{$t("info.notOfficial")}}</div>
-                    <div class="text-left"><a href="https://miobutton.github.io/MioButton/" target="_blank">{{$t("info.audioStaff")}}</a></div>
-                    <div class="text-left"><a href="https://github.com/MioButton/MioButton" target="_blank">{{$t("info.toGithub")}}</a></div>
+                    <div class="text-left"><a href="https://miobutton.github.io/ShofukuButton/" target="_blank">{{$t("info.audioStaff")}}</a></div>
+                    <div class="text-left"><a href="https://github.com/MioButton/ShofukuButton" target="_blank">{{$t("info.toGithub")}}</a></div>
                 </div>
             </div>
         </footer>

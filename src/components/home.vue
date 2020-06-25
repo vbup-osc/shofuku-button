@@ -325,9 +325,9 @@ class HomePage extends Vue {
         var title=this.$t("voice."+ tempList.voiceList[this._randomNum(0, tempList.voiceList.length - 1)].name);
         var res=document.getElementById('share').value;
         if(this.$i18n.locale === 'ja-JP'){
-            window.open("https://twitter.com/intent/tweet?text="+"%23ミオボタン %23ミオかわいい 今日、「"+res+"」のランダムオーディオは「"+title+"」です！ より多くのオーディオを聞くには、「ミオボタン」のWebサイトにアクセスしてください~ https://t.co/TLdj8E9Rct");
+            window.open("https://twitter.com/intent/tweet?text="+"%23招福ボタン %23招福にゃこ 今日、「"+res+"」のランダムオーディオは「"+title+"」です！ より多くのオーディオを聞くには、「招福ボタン」のWebサイトにアクセスしてください~ https://nyakoshofuku.org");
         } else {
-            window.open("https://twitter.com/intent/tweet?text="+"%23ミオボタン %23ミオかわいい 今天，“"+res+"”的随机音频是“"+title+"”！ 访问狼按钮网站聆听更多音频 https://t.co/TLdj8E9Rct");
+            window.open("https://twitter.com/intent/tweet?text="+"%23招福ボタン %23招福にゃこ 今天，“"+res+"”的随机音频是“"+title+"”！ 访问福按钮网站聆听更多音频 https://nyakoshofuku.org");
         }
     }
     autoPlay(){
