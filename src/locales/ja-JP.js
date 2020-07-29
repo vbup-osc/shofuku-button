@@ -7,7 +7,7 @@ const ja_JP = {
         author: "招福ボタンチーム 2020",
         audioStaff: "感謝リストとウェブサイト情報",
         toGithub: "Githubに関する貴重なフィードバックを提供してください",
-        notOfficial: "アップロードした音声ファイルがあなたの権利を侵害している場合は、すぐに削除するように私たちに通知してください:samuimomijiyuki@qq.com",
+        notOfficial: "アップロードした音声ファイルがあなたの権利を侵害している場合は、すぐに削除するように私たちに通知してください:support@vbup.org",
         overlapTips: "声重なる再生モードは手動で停止できません。大量のスレッドを作成するので、後リフレッシュしてください。"
     },
     action: {
