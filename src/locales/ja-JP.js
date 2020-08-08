@@ -4,7 +4,7 @@ const ja_JP = {
         info: "通知",
         null: "空",
         subscriber: "現在までのチャンネル登録者人数:",
-        author: "招福ボタンチーム 2020",
+        author: "音声ボタンユナイテッドスタジオ 2020",
         audioStaff: "感謝リストとウェブサイト情報",
         toGithub: "Githubに関する貴重なフィードバックを提供してください",
         notOfficial: "アップロードした音声ファイルがあなたの権利を侵害している場合は、すぐに削除するように私たちに通知してください:support@vbup.org",
