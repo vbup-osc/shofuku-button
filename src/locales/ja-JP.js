@@ -27,6 +27,7 @@ const ja_JP = {
         vtbbtn: "VTuberの音声ボタンコレクション",
         adtitle: "● コラボレーションプロジェクト",
         plan: "予定の期日",
+        sticker: "招福のステッカー",
         ing: "ライブ配信中"
     },
     lang: {

@@ -36,6 +36,7 @@
                 </div>
                 <div class="cate-ctrldft">{{$t("action.adtitle")}}
                     <button class="btn btn-ctrldft" onclick="window.open('https://vtbbtn.org')">{{$t("action.vtbbtn")}}</button>
+                    <button class="btn btn-ctrldft" onclick="window.open('https://cute.nyakoshofuku.org')">{{$t("action.sticker")}}</button>
                 </div>
             <div v-for="category in voices" v-bind:key="category.categoryName">
                 <div class="cate-header">{{ $t("voicecategory." + category.categoryName) }} 

@@ -20,6 +20,7 @@ const zh_CN = {
         close: "关闭",
         copy: "复制",
         stopvoice: "停止",
+        sticker: "福贴纸",
         randomplay: "随机选择",
         overlap: "重叠播放",
         autoplay: "自动播放",
