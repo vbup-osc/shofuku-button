@@ -48,8 +48,8 @@
                 <div class="pull-left">
                     <div class="text-left" style="color: #5231a7;">{{$t("info.author")}}</div>
                     <div class="text-left">{{$t("info.notOfficial")}}</div>
-                    <div class="text-left"><a href="https://voicebuttonunitedproject.github.io/ShofukuButton/" target="_blank">{{$t("info.audioStaff")}}</a></div>
-                    <div class="text-left"><a href="https://github.com/VoiceButtonUnitedProject/ShofukuButton" target="_blank">{{$t("info.toGithub")}}</a></div>
+                    <div class="text-left"><a href="https://voosc.github.io/shofuku-button/" target="_blank">{{$t("info.audioStaff")}}</a></div>
+                    <div class="text-left"><a href="https://github.com/voosc/shofuku-button" target="_blank">{{$t("info.toGithub")}}</a></div>
                 </div>
             </div>
         </footer>
