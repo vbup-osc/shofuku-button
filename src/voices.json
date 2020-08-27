@@ -1,21 +1,231 @@
 ﻿{
     "voices": [
-        {
-            "categoryName": "null",
-            "categoryDescription": {
-              "zh-CN": "▌HELLO WORLD",
-              "ja-JP": "▌HELLO WORLD"
-            },
-            "voiceList": [
-              {
-                  "name": "nyako-null",
-                  "path": "nyako-null.mp3",
-                  "description": {
-                      "zh-CN": "HELLO WORLD",
-                      "ja-JP": "HELLO WORLD"
-                  }
-              }
-            ]
-        }
+      {
+        "categoryName": "",
+        "categoryDescription": {
+          "zh-CN": "▌名言",
+          "ja-JP": "▌名言",
+          "en-US": ""
+        },
+        "voiceList": [
+          {
+            "name": "nyako-16",
+            "path": "nyako-16.mp3",
+            "description": {
+              "zh-CN": "少来指望我nyako啊，明明比nyako好的多啊,铁咩",
+              "ja-JP": "にゃこにたがってじゃねよ、にゃこより持っげてるのによ、てめえ",
+              "en-US": ""
+            }
+          },
+          {
+            "name": "nyako-9",
+            "path": "nyako-9.mp3",
+            "description": {
+              "zh-CN": "铁咩你这家伙自己盆满体满的赚了不少吧",
+              "ja-JP": "は？てめえは自分でもげてるだろうがよ、たくさんよ",
+              "en-US": ""
+            }
+          },
+          {
+            "name": "nyako-22",
+            "path": "nyako-22.mp3",
+            "description": {
+              "zh-CN": "诶~~，笨蛋，呆瓜，渣子",
+              "ja-JP": "え～、ばか、ボケ、カス",
+              "en-US": ""
+            }
+          },
+          {
+            "name": "nyako-17",
+            "path": "nyako-17.mp3",
+            "description": {
+              "zh-CN": "少瞧不起人了啊你這個家伙",
+              "ja-JP": "なめてじゃねぞ、この野郎",
+              "en-US": ""
+            }
+          },
+          {
+            "name": "nyako-18",
+            "path": "nyako-18.mp3",
+            "description": {
+              "zh-CN": "说的是呢",
+              "ja-JP": "そうですね、",
+              "en-US": ""
+            }
+          },
+          {
+            "name": "nyako-23",
+            "path": "nyako-23.mp3",
+            "description": {
+              "zh-CN": "铭记在心，你们真的很恶心啊",
+              "ja-JP": "心にしめる、うまえらほんとに気持ち悪いな",
+              "en-US": ""
+            }
+          },
+          {
+            "name": "nyako-20",
+            "path": "nyako-20.mp3",
+            "description": {
+              "zh-CN": "诶~丘唔~啊~啦~",
+              "ja-JP": "えっちょう、あ～ら～",
+              "en-US": ""
+            }
+          },
+          {
+            "name": "nyako-14",
+            "path": "nyako-14.mp3",
+            "description": {
+              "zh-CN": "哼，你那是什么表情",
+              "ja-JP": "ヘンー、何だその顔",
+              "en-US": ""
+            }
+          },
+          {
+            "name": "nyako-19",
+            "path": "nyako-19.mp3",
+            "description": {
+              "zh-CN": "真吵啊，真的是",
+              "ja-JP": "うるせな、まじで",
+              "en-US": ""
+            }
+          },
+          {
+            "name": "nyako-21",
+            "path": "nyako-21.mp3",
+            "description": {
+              "zh-CN": "抖m增加了",
+              "ja-JP": "ｍが増えじゃだ",
+              "en-US": ""
+            }
+          }
+        ]
+      },
+      {
+        "categoryName": "",
+        "categoryDescription": {
+          "zh-CN": "▌壶男",
+          "ja-JP": "▌壺男",
+          "en-US": ""
+        },
+        "voiceList": [
+          {
+            "name": "nyako-7",
+            "path": "nyako-7.mp3",
+            "description": {
+              "zh-CN": "呀，让人火大啊，哈（叹气）",
+              "ja-JP": "や、むかつくな、は～（嘆息）",
+              "en-US": ""
+            }
+          },
+          {
+            "name": "nyako-13",
+            "path": "nyako-13.mp3",
+            "description": {
+              "zh-CN": "哈哈哈哈哈哈",
+              "ja-JP": "ははははははは",
+              "en-US": ""
+            }
+          },
+          {
+            "name": "nyako-10",
+            "path": "nyako-10.mp3",
+            "description": {
+              "zh-CN": "呜呜，呜呜呜呜，哈哈哈哈哈哈哈哈",
+              "ja-JP": "うう、ううううう、ははははははははは",
+              "en-US": ""
+            }
+          },
+          {
+            "name": "nyako-3",
+            "path": "nyako-3.mp3",
+            "description": {
+              "zh-CN": "不是蛮顺利的么，啊啊啊啊啊啊啊啊啊啊啊啊，哈哈，啊哈哈，哈哈",
+              "ja-JP": "うまくない？あっああああああああ、へんへん、あは、あはああ、はは",
+              "en-US": ""
+            }
+          },
+          {
+            "name": "nyako-12",
+            "path": "nyako-12.mp3",
+            "description": {
+              "zh-CN": "哈哈哈哈哈哈哈，唔嗯嗯嗯嗯嗯",
+              "ja-JP": "ははははは、うんんんんんん",
+              "en-US": ""
+            }
+          },
+          {
+            "name": "nyako-15",
+            "path": "nyako-15.mp3",
+            "description": {
+              "zh-CN": "已经不能做到自然了，已经自然地，哈呀，不想看了",
+              "ja-JP": "もう天然できない、もう天然に、はや、見たくない",
+              "en-US": ""
+            }
+          },
+          {
+            "name": "nyako-5",
+            "path": "nyako-5.mp3",
+            "description": {
+              "zh-CN": "呐，好可怕，好可怕",
+              "ja-JP": "ね、怖い、怖い",
+              "en-US": ""
+            }
+          },
+          {
+            "name": "nyako-4",
+            "path": "nyako-4.mp3",
+            "description": {
+              "zh-CN": "这样做，这样，这，这，笨蛋，笨，笨蛋",
+              "ja-JP": "こうやして、こう、こ、こ、ばかやろ、ばか、ばかやろ",
+              "en-US": ""
+            }
+          },
+          {
+            "name": "nyako-6",
+            "path": "nyako-6.mp3",
+            "description": {
+              "zh-CN": "哈哈哈哈哈哈",
+              "ja-JP": "ははははははは",
+              "en-US": ""
+            }
+          },
+          {
+            "name": "nyako-1",
+            "path": "nyako-1.mp3",
+            "description": {
+              "zh-CN": "哼，嘿嘿嘿",
+              "ja-JP": "ほん、へへへ",
+              "en-US": ""
+            }
+          },
+          {
+            "name": "nyako-8",
+            "path": "nyako-8.mp3",
+            "description": {
+              "zh-CN": "哈哈哈，哈哈哈",
+              "ja-JP": "ははは、ははは",
+              "en-US": ""
+            }
+          },
+          {
+            "name": "nyako-2",
+            "path": "nyako-2.mp3",
+            "description": {
+              "zh-CN": "嘿，哈哈哈哈哈哈哈",
+              "ja-JP": "へ、ははははははは",
+              "en-US": ""
+            }
+          },
+          {
+            "name": "nyako-11",
+            "path": "nyako-11.mp3",
+            "description": {
+              "zh-CN": "哈？",
+              "ja-JP": "は？",
+              "en-US": ""
+            }
+          }
+        ]
+      }
     ]
-}
+  }
