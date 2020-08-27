@@ -1,7 +1,7 @@
 ﻿{
     "voices": [
       {
-        "categoryName": "",
+        "categoryName": "famoussts",
         "categoryDescription": {
           "zh-CN": "▌名言",
           "ja-JP": "▌名言",
@@ -101,7 +101,7 @@
         ]
       },
       {
-        "categoryName": "",
+        "categoryName": "potman",
         "categoryDescription": {
           "zh-CN": "▌壶男",
           "ja-JP": "▌壺男",
