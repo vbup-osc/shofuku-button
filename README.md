@@ -2,7 +2,7 @@
 
 Shofuku Button [http://nyakoshofuku.org](https://nyakoshofuku.org)
 
-![SHOFUKU-BTN-CI/CD](https://github.com/MioButton/ShofukuButton/workflows/SHOFUKU-BTN-CI/CD/badge.svg)
+![SHOFUKU-BTN-CI/CD](https://github.com/vbup-osc/shofuku-button/workflows/SHOFUKU-BTN-CI/CD/badge.svg)
 
 相关链接/関連URL/Related Links:
 
@@ -23,10 +23,6 @@ This project is supported by Voice Button United Studio.
 This project was greatly helped by [jetri.co](https://twitter.com/dragonjetmkii?s=09) 
 
 This project is modified based on the [Aqua button](https://github.com/zyzsdy/aqua-button).
-
-[![Vercel Logo](https://cdn.jsdelivr.net/gh/paizi/vue-test/vercel.svg)](https://www.vercel.com/?utm_source=vbuposc&utm_campaign=oss)
-
-本项目由 [Vercel](https://www.vercel.com/?utm_source=vbuposc&utm_campaign=oss) 强力驱动。
 
 ## LICENCE
 
